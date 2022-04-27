@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "Admin@ad.ru",
+      "password": "12345",
+      "login": "Admin"
+    },
+    {
+      "name": "Rick",
+      "login": "Roll",
+      "email": "RickRoll@gmail.com",
+      "password": "12341234",
+      "id": 2
+    },
+    {
+      "name": "rick",
+      "login": "asd",
+      "email": "asds@af.ru",
+      "password": "12341234",
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "login": "test",
+      "email": "test@test.test",
+      "password": "testtest",
+      "id": 4
+    }
+  ]
+}

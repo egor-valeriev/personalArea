@@ -1,0 +1,15 @@
+.btn {
+    margin-top: 3rem;
+    padding: 1rem 0.5rem;
+
+    background-color: $secondary;
+    color: $white;
+
+    box-shadow: none;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($secondary, 10%);
+    }
+}

@@ -27,6 +27,13 @@
       "email": "test@test.test",
       "password": "testtest",
       "id": 4
+    },
+    {
+      "name": "dsfds",
+      "login": "Admin@ad.ru",
+      "email": "egor.valeriev@gmail.com",
+      "password": "12345678",
+      "id": 5
     }
   ]
 }

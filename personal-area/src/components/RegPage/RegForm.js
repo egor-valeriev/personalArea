@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { getData, postData } from "../helpers/api";
 import { host } from "../helpers/constant";
 
-export const RegPage = () => {
+export const RegForm = () => {
 
     const [userData, setUserData] = useState({
         name: '',
@@ -26,7 +27,7 @@ export const RegPage = () => {
         password: false,
         secPassword: false
     })
-    const [userList, setUserList] = useState([])
+    const [userList, setUserList] = useState([]);
     const [isLoading, setLoading] = useState(false);
     useEffect(() => {
         if (!isLoading) {
@@ -43,6 +44,7 @@ export const RegPage = () => {
     const [emailWrongText, setEmailWrongText] = useState('* Данный Email уже занят')
     const [isValideForm, setValide] = useState(false)
     const errText = '* Поле обязательно для заполнения!'
+    const Navigate = useNavigate();
     
 
     const handleInput = (e) => {
@@ -181,14 +183,15 @@ export const RegPage = () => {
                 }
                 ).then((data) => {
                     console.log(data);
-                })
+                });
+            Navigate('/login');
             } else {
                 alert('Заполните все поля')
             }
         }
 
     return (
-        <div className="reg__page">
+        
             <form className="reg__form">
                 <h1>Регистрация</h1>
                 <h2>Имя</h2>
@@ -265,8 +268,12 @@ export const RegPage = () => {
 
                 {isValideForm ? null : <p className="reg__form-label submit">* Заполните все поля правильно!</p>}
                 </div>
-                
+
+                <div className="header">
+                    <p>Уже зарегистрированны?</p>
+                    <Link to={'/login'} className="btn link">Войти</Link>
+                </div>
             </form>
-        </div>
+       
     )
 }

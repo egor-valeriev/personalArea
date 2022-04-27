@@ -34,6 +34,34 @@
       "email": "egor.valeriev@gmail.com",
       "password": "12345678",
       "id": 5
+    },
+    {
+      "name": "Михаил",
+      "login": "misha_1119",
+      "email": "misha19@gmail.com",
+      "password": "1234512345",
+      "id": 6
+    },
+    {
+      "name": "123",
+      "login": "123",
+      "email": "123@123.df",
+      "password": "123123123123",
+      "id": 7
+    },
+    {
+      "name": "Михаил",
+      "login": "mishka_97",
+      "email": "mishka_97@mail.ru",
+      "password": "12341234",
+      "id": 8
+    },
+    {
+      "name": "Человек",
+      "login": "human1111",
+      "email": "human@hu.ru",
+      "password": "11111111",
+      "id": 9
     }
   ]
 }

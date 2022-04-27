@@ -1,8 +1,12 @@
+import { Outlet } from "react-router-dom"
 
 
 export const MainPage = () => {
 
     return (
-        <div>Its a main Page</div>
+        <div className="main-container">
+            
+            <Outlet/>
+        </div>
     )
 }

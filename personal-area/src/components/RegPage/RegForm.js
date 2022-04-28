@@ -42,7 +42,7 @@ export const RegForm = () => {
 
     const wrongClass = 'wrong'
     const [emailWrongText, setEmailWrongText] = useState('* Данный Email уже занят')
-    const [isValideForm, setValide] = useState(false)
+    const [isValideForm, setValide] = useState(true)
     const errText = '* Поле обязательно для заполнения!'
     const Navigate = useNavigate();
     
@@ -173,7 +173,7 @@ export const RegForm = () => {
 
     const  handleClick = (e) => {
             e.preventDefault();
-            if (isValideForm) {
+            if (isValideForm && userData.login.length > 0) {
                 postData(`${host}/users`, "POST",
                 {
                     name: userData.name,
@@ -266,7 +266,7 @@ export const RegForm = () => {
                         Зарегистрироваться
                 </button>
 
-                {isValideForm ? null : <p className="reg__form-label submit">* Заполните все поля правильно!</p>}
+                {isValideForm  ? null : <p className="reg__form-label submit">* Заполните все поля правильно!</p>}
                 </div>
 
                 <div className="header">

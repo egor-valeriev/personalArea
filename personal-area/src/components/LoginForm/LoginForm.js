@@ -3,10 +3,13 @@ import { connect } from "react-redux";
 import { getData } from "../helpers/api";
 import { host } from "../helpers/constant";
 import * as userActions from "../../redux/actions/user"
+import * as authActions from "../../redux/actions/auth"
 import { bindActionCreators } from "redux";
 import {  useNavigate } from "react-router-dom";
 
 const LoginForm = (props) => {
+    console.log(props);
+    const setAuth = props.auth
     const saveUser = props.setUser;
     const [userList, setUserList] = useState({});
     const [isLoading, setLoading] = useState(false);
@@ -88,6 +91,7 @@ const LoginForm = (props) => {
         checkUserLogin();
         if (isUser) {
                saveUser(userList.find(item => item.login === userData.login ? item : null));
+               setAuth(true)
                Navigate('/welcome')
         } else setWrong({login: true, password: true})
     }
@@ -132,16 +136,15 @@ const LoginForm = (props) => {
         
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = ({user, auth}) => ({
+    user: user.user,
+    auth: auth  
+})
 
-            return {
-                user: state.user.user
-            }
-            
-}
 
 const mapDispatchToProps = dispatch => ({
-    ...bindActionCreators(userActions, dispatch)
+    ...bindActionCreators(userActions, dispatch),
+    ...bindActionCreators(authActions, dispatch)
 })
 
 

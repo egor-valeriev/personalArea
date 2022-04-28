@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { bindActionCreators } from "redux";
-import * as userActions from "../../redux/actions/user"
+import * as userActions from "../../redux/actions/user";
+import * as authActions from "../../redux/actions/auth"
 
 const WelcomePage = (props) => {
     const Navigate = useNavigate();
@@ -14,16 +15,15 @@ const WelcomePage = (props) => {
     )
 }
 
-function mapStateToProps(state) {
 
-    return {
-        user: state.user.user
-    }
-    
-}
+const mapStateToProps = ({user, auth}) => ({
+        user: user.user,
+        auth: auth  
+})
 
 const mapDispatchToProps = dispatch => ({
-...bindActionCreators(userActions, dispatch)
+...bindActionCreators(userActions, dispatch),
+...bindActionCreators(authActions, dispatch)
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(WelcomePage)

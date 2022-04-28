@@ -62,6 +62,13 @@
       "email": "human@hu.ru",
       "password": "11111111",
       "id": 9
+    },
+    {
+      "name": "",
+      "login": "",
+      "email": "",
+      "password": "",
+      "id": 10
     }
   ]
 }

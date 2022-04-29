@@ -269,10 +269,7 @@ export const RegForm = () => {
                 {isValideForm  ? null : <p className="reg__form-label submit">* Заполните все поля правильно!</p>}
                 </div>
 
-                <div className="header">
-                    <p>Уже зарегистрированны?</p>
-                    <Link to={'/login'} className="btn link">Войти</Link>
-                </div>
+               
             </form>
        
     )

@@ -1,4 +1,4 @@
-export const auth = (state) => ({
+export const setAuth = (state) => ({
     type: "LOGIN",
     payload: state
 })

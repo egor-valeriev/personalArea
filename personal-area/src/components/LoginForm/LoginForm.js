@@ -9,7 +9,7 @@ import {  useNavigate } from "react-router-dom";
 
 const LoginForm = (props) => {
     console.log(props);
-    const setAuth = props.auth
+    const setAuth = props.setAuth
     const saveUser = props.setUser;
     const [userList, setUserList] = useState({});
     const [isLoading, setLoading] = useState(false);
@@ -138,7 +138,7 @@ const LoginForm = (props) => {
 
 const mapStateToProps = ({user, auth}) => ({
     user: user.user,
-    auth: auth  
+    auth: auth.auth
 })
 
 

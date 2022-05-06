@@ -9,7 +9,7 @@ export const MainPage = () => {
             (location.pathname === '/' ? 
                 <div className="header">
                     <p>Уже зарегистрированны?</p>
-                    <Link to={'/login'} className="btn link">Войти</Link>
+                    <Link to={'/login'} className="button link">Войти</Link>
                 </div>
                 : null
                 )

@@ -122,7 +122,7 @@ const LoginForm = (props) => {
                     />
                      {isClean.password ? <p className="log__form-label password">{errText}</p> : null}
                 <div className={'login__form-button-container'}>
-                <button className="btn log_btn"
+                <button className="button log_btn"
                         onMouseUp={checkUserLogin}
                         
                         onClick={handleClick}

@@ -5,7 +5,30 @@
       "name": "Admin",
       "email": "Admin@ad.ru",
       "password": "12345",
-      "login": "Admin"
+      "login": "Admin",
+      "contacts": [
+        {
+          "id": 0,
+          "name": "Егор Павлов",
+          "tel": "+79160887963",
+          "email": "egor.valeriev@gmail.com",
+          "vk": "https://vk.com/valeriev_egor"
+        },
+        {
+          "id": 1,
+          "name": "Егор Павлов",
+          "tel": "+79160887963",
+          "email": "egor.valeriev@gmail.com",
+          "vk": "https://vk.com/valeriev_egor"
+        },
+        {
+          "id": 2,
+          "name": "Егор Павлов",
+          "tel": "+79160887963",
+          "email": "egor.valeriev@gmail.com",
+          "vk": "https://vk.com/valeriev_egor"
+        }
+      ]
     },
     {
       "name": "Rick",

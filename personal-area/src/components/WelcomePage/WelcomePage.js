@@ -10,7 +10,7 @@ const WelcomePage = (props) => {
     return (
         <div className="page__container">
             <h1>{`Добро пожаловать, ${props.user.name}!`}</h1>
-            <Link to={'/contacts'} className="btn show-contacts">Посмотреть список контактов</Link>
+            <Link to={'/contacts'} className="button show-contacts">Посмотреть список контактов</Link>
         </div>
     )
 }

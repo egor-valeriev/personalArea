@@ -1,8 +1,8 @@
 @import './vars';
-@import './fonts.scss';
+@import './fonts.scss'; 
 
 html {
-    font-size: 62.5%;
+    font-size: 1.2vw;
     color: $primary;
 }
 
@@ -13,7 +13,7 @@ body {
     Roboto, Helvetica, 
     Arial, sans-serif;
     background-color: $white;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     color: $black;
     margin: 0;
     height: 100%;
@@ -28,3 +28,4 @@ body {
 @import './blocks/loginForm.scss';
 @import './blocks/welcomePage.scss';
 @import './blocks/contactList.scss';
+@import './blocks/contactMenu.scss';

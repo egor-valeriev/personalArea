@@ -262,7 +262,7 @@ export const RegForm = () => {
                 <button onMouseEnter={checkValidateForm}
                         onFocus={checkValidateForm} 
                         onClick={handleClick} 
-                        className="btn reg_btn">
+                        className="button reg_btn">
                         Зарегистрироваться
                 </button>
 
